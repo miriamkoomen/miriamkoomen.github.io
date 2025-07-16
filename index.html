@@ -1,36 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Miriam Koomen</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello and welcome to my website.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      padding: 0 20px;
+      max-width: 1100px;
+      line-height: 1.6;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+    .sidebar {
+      width: 250px;
+      flex-shrink: 0;
+    }
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .content {
+      flex-grow: 1;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    li {
+      margin-bottom: 1em;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6;">
+<body>
 
-  <!-- Profile Section -->
-  <div style="display: flex; align-items: center; gap: 20px;">
-    <img src="koomen_miriam.jpg" alt="Profile Picture"
-         style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-    
-    <div>
-      <h1 style="margin-bottom: 0;">Dr. Your Name</h1>
-      <p style="margin-top: 8px;">
-        I am a researcher in international economics.  
-        My work focuses on the external sector.
+  <div class="container">
+
+    <!-- Left Sidebar: Image + Contact Info -->
+    <div class="sidebar">
+      <img src="koomen_miriam.jpg" alt="Profile Picture" />
+      <h2>Miriam Koomen</h2>
+      <p>
+        I am a PhD economist based in Switzerland. My research focuses on international economics.
       </p>
+      <h3>Contact</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>Email: <a href="mailto:mkoomen@protonmail.com">mkoomen@protonmail.com</a></li>
+        <li><a href="cv.pdf">CV (PDF)</a></li>
+        <li><a href="https://scholar.google.com">Google Scholar</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content: Publications -->
+    <div class="content">
+      <h2>Publications</h2>
+      <p>Please find below my published work with the associated code where applicable.</p>
+
+      <ul>
+        <li>
+          <strong>Demographics and current account imbalances: Accounting for the full age distribution</strong>, 
+          <em>IMF Economic Review</em>, 2023, joint with Laurence Wicht.  
+          <br>
+          <a href="https://link.springer.com/article/10.1057/s41308-022-00176-6">Published version</a>  
+          | <a href="https://github.com/MKoom/Koomen_Wicht_2023">Replication code</a>
+        </li>
+
+        <li>
+          <strong>Pension systems and the current account: An empirical exploration</strong>, 
+          <em>Journal of International Money and Finance</em>, 2022, joint with Laurence Wicht.  
+          <br>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0261560621001716">Published version</a>
+        </li>
+
+        <li>
+          <strong>Occupational tasks and wage inequality in West Germany: A decomposition analysis</strong>, 
+          <em>Labour Economics</em>, 2022, joint with Uschi Backes-Gellner.  
+          <br>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0927537122001749">Published version</a>  
+          | <a href="https://github.com/MKoom/Backes-Gellner_Koomen_2022">Replication code</a>
+        </li>
+
+        <li>
+          <strong>Interpersonal, cognitive and manual skills: How do they shape employment and wages?</strong>, 
+          <em>Labour Economics</em>, 2022, joint with Esther Mirjam Girsberger and Matthias Krapf.  
+          <br>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0927537122001749">Published version</a>
+        </li>
+
+        <li>
+          <strong>Regional innovation effects of applied research institutions</strong>, 
+          <em>Research Policy</em>, 2021, joint with Curdin Pfister, Dietmar Harhoff and Uschi Backes-Gellner.  
+          <br>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0048733321000019">Published version</a>
+        </li>
+
+        <li>
+          <strong>Labour market transitions after layoffs: the role of occupational skills</strong>, 
+          <em>Oxford Economic Papers</em>, 2021, joint with Uschi Backes-Gellner.  
+          <br>
+          <a href="https://academic.oup.com/oep/article-abstract/73/1/76/5613775?redirectedFrom=fulltext">Published version</a>
+        </li>
+
+        <li>
+          <strong>Firms’ method of pay and the retention of apprentices</strong>, 
+          <em>Oxford Economic Papers</em>, 2020, joint with Uschi Backes-Gellner.  
+          <br>
+          <a href="https://academic.oup.com/oep/article-abstract/72/1/269/5366185?redirectedFrom=fulltext">Published version</a>
+        </li>
+
+        <li>
+          <strong>Demographics and the current account</strong>, 
+          <em>Aussenwirtschaft</em>, 2018, joint with Joschka Gerigk and Adrien Wicht.  
+          <br>
+          <a href="https://www.econstor.eu/handle/10419/231255">Published version</a>
+        </li>
+
+        <li>
+          <strong>Occupational specificity: A new measurement based on training curricula and its effect on labor market outcomes</strong>, 
+          <em>Labour Economics</em>, 2018, joint with Christian Eggenberger and Uschi Backes-Gellner.  
+          <br>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0927537117303238">Published version</a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <hr style="margin: 30px 0;">
-
-  <!-- Contact Info -->
-  <h2>Contact</h2>
-  <ul>
-    <li>Email: <a href="mailto:mkoomen@protonmail.com">mkoomen@protonmail.com</a></li>
-    <li><a href="cv.pdf">Download CV (PDF)</a></li>
-    <li><a href="https://scholar.google.com">Google Scholar</a></li>
-  </ul>
-
 </body>
 </html>
-
